@@ -1,25 +1,33 @@
 {
-  "name": "my-webpack-base",
-  "version": "1.0.0",
-  "description": "Learning how to set up webpack, let's make it do my bidding",
-  "main": "index.js",
-  "scripts": {
-    "test": "test"
-  },
-  "repository": {
-    "type": "git",
-    "url": "\u0016https://github.com/damianpokorski/my-webpack-base"
-  },
-  "keywords": [
-    "webpack",
-    "base",
-    "playground",
-    "setup",
-    "javascript",
-    "node",
-    "js",
-    "web"
-  ],
-  "author": "Damian Pokorski <damianpokorski@hotmail.com> (http://damianpokorski.com)",
-  "license": "Apache-2.0"
+    "name": "my-webpack-base",
+    "version": "1.0.0",
+    "description": "Learning how to set up webpack, let's make it do my bidding",
+    "main": "src/index.js",
+    "scripts": {
+        "test": "test",
+        "pack": "npx webpack --config config/webpack.config.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "\u0016https://github.com/damianpokorski/my-webpack-base"
+    },
+    "keywords": [
+        "webpack",
+        "base",
+        "playground",
+        "setup",
+        "javascript",
+        "node",
+        "js",
+        "web"
+    ],
+    "author": "Damian Pokorski <damianpokorski@hotmail.com> (http://damianpokorski.com)",
+    "license": "Apache-2.0",
+    "devDependencies": {
+        "webpack": "^4.15.1",
+        "webpack-cli": "^3.0.8"
+    },
+    "dependencies": {
+        "lodash": "^4.17.10"
+    }
 }
