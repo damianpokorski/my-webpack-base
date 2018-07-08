@@ -5,7 +5,9 @@
     "main": "src/index.js",
     "scripts": {
         "test": "test",
-        "pack": "npx webpack --config config/webpack.config.js"
+        "pack": "npx webpack --config config/webpack.config.js",
+        "watch": "npx webpack --config config/webpack.config.js --watch",
+        "start": "node src/serve.js"
     },
     "repository": {
         "type": "git",
@@ -24,6 +26,13 @@
     "author": "Damian Pokorski <damianpokorski@hotmail.com> (http://damianpokorski.com)",
     "license": "Apache-2.0",
     "devDependencies": {
+        "css-loader": "^1.0.0",
+        "express": "^4.16.3",
+        "file-loader": "^1.1.11",
+        "node-sass": "^4.9.2",
+        "sass-loader": "^7.0.3",
+        "style-loader": "^0.21.0",
+        "url-loader": "^1.0.1",
         "webpack": "^4.15.1",
         "webpack-cli": "^3.0.8"
     },
